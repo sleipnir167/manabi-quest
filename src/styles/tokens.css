@@ -1,0 +1,201 @@
+/* ===== デザイントークン（ライト／ダーク） ===== */
+:root {
+  color-scheme: light;
+  --font: 'Nunito', 'Hiragino Maru Gothic ProN', 'M PLUS Rounded 1c', 'Zen Maru Gothic', 'Hiragino Sans', system-ui, sans-serif;
+  --font-num: 'Nunito', 'M PLUS Rounded 1c', system-ui, sans-serif;
+
+  --bg: #f3f5fc;
+  --bg-dot: rgba(70, 80, 160, 0.07);
+  --surface: #ffffff;
+  --surface-2: #f2f4fb;
+  --surface-3: #e7eaf5;
+  --line: #e2e6f1;
+  --line-strong: #cfd5e6;
+  --text: #182040;
+  --text-2: #4b5579;
+  --text-3: #8a93b3;
+  --overlay: rgba(16, 20, 48, 0.45);
+
+  --primary: #5b5bf6;
+  --primary-2: #8b5cf6;
+  --primary-ink: #3d3dd6;
+  --primary-soft: #ecebff;
+  --primary-text: #4343db;
+
+  --ok: #12b76a;
+  --ok-ink: #0b8a4f;
+  --ok-soft: #dcf7ea;
+  --ok-text: #087443;
+  --ng: #f04462;
+  --ng-ink: #c42a47;
+  --ng-soft: #ffe5ea;
+  --ng-text: #b4233f;
+  --warn: #f59e0b;
+  --warn-soft: #fff3d6;
+  --warn-text: #92580a;
+  --gold: #ffb020;
+  --gold-ink: #d48a00;
+  --flame: #ff6a1a;
+
+  /* 教科色（グラフ用に色覚多様性チェック済み） */
+  --kokugo: #e5484d;
+  --kokugo-2: #ff8a8f;
+  --kokugo-soft: #ffe9ea;
+  --kokugo-ink: #b3262b;
+  --math: #2f6bff;
+  --math-2: #38bdf8;
+  --math-soft: #e6eeff;
+  --math-ink: #1d4fd1;
+  --science: #14a37f;
+  --science-2: #5ad69a;
+  --science-soft: #dff6ee;
+  --science-ink: #0b7a5e;
+  --social: #d97706;
+  --social-2: #fbbf24;
+  --social-soft: #fff1dc;
+  --social-ink: #a35704;
+  --english: #8b5cf6;
+  --english-2: #f472b6;
+  --english-soft: #f1eaff;
+  --english-ink: #6a3cd6;
+
+  --fig-fill: rgba(91, 91, 246, 0.12);
+  --fig-accent: #e5484d;
+  /* 記憶の段階（順序のある1色の濃淡） */
+  --stage-1: #d4d3ff;
+  --stage-2: #a9a7ff;
+  --stage-3: #7f7cf8;
+  --stage-4: #5b5bf6;
+  --stage-5: #3434c4;
+
+  --shadow-1: 0 1px 2px rgba(24, 32, 64, 0.05), 0 4px 14px rgba(24, 32, 64, 0.06);
+  --shadow-2: 0 10px 34px rgba(24, 32, 64, 0.12);
+  --shadow-3: 0 24px 60px rgba(24, 32, 64, 0.22);
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 28px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --tabbar-h: 66px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #0d1029;
+    --bg-dot: rgba(255, 255, 255, 0.045);
+    --surface: #171c3a;
+    --surface-2: #1f2549;
+    --surface-3: #2a3160;
+    --line: #2a3160;
+    --line-strong: #3a4280;
+    --text: #eef0ff;
+    --text-2: #b4bbdf;
+    --text-3: #7f88b6;
+    --overlay: rgba(4, 6, 20, 0.6);
+    --primary: #7474ff;
+    --primary-2: #a07bff;
+    --primary-ink: #4b4bd8;
+    --primary-soft: #262a63;
+    --primary-text: #a9a9ff;
+    --ok: #22c47b;
+    --ok-ink: #12925a;
+    --ok-soft: #123a2c;
+    --ok-text: #5fe0a2;
+    --ng: #ff5a76;
+    --ng-ink: #c93a55;
+    --ng-soft: #3e1a28;
+    --ng-text: #ff8ea2;
+    --warn-soft: #3a2c10;
+    --warn-text: #ffc757;
+    --kokugo: #e8555a;
+    --kokugo-soft: #3a1c26;
+    --kokugo-ink: #ff9a9e;
+    --math: #4a7dff;
+    --math-soft: #1a2a5c;
+    --math-ink: #93b4ff;
+    --science: #139c74;
+    --science-soft: #12352e;
+    --science-ink: #6fe0bd;
+    --social: #d47a12;
+    --social-soft: #3a2a14;
+    --social-ink: #ffc06b;
+    --english: #9a6cf7;
+    --english-soft: #2b1f52;
+    --english-ink: #c9adff;
+    --fig-fill: rgba(140, 140, 255, 0.16);
+    --fig-accent: #ff7a80;
+    --stage-1: #353a7a;
+    --stage-2: #4b50ad;
+    --stage-3: #6569da;
+    --stage-4: #8c8eff;
+    --stage-5: #c3c4ff;
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 14px rgba(0, 0, 0, 0.25);
+    --shadow-2: 0 10px 34px rgba(0, 0, 0, 0.4);
+    --shadow-3: 0 24px 60px rgba(0, 0, 0, 0.55);
+  }
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0d1029;
+  --bg-dot: rgba(255, 255, 255, 0.045);
+  --surface: #171c3a;
+  --surface-2: #1f2549;
+  --surface-3: #2a3160;
+  --line: #2a3160;
+  --line-strong: #3a4280;
+  --text: #eef0ff;
+  --text-2: #b4bbdf;
+  --text-3: #7f88b6;
+  --overlay: rgba(4, 6, 20, 0.6);
+  --primary: #7474ff;
+  --primary-2: #a07bff;
+  --primary-ink: #4b4bd8;
+  --primary-soft: #262a63;
+  --primary-text: #a9a9ff;
+  --ok: #22c47b;
+  --ok-ink: #12925a;
+  --ok-soft: #123a2c;
+  --ok-text: #5fe0a2;
+  --ng: #ff5a76;
+  --ng-ink: #c93a55;
+  --ng-soft: #3e1a28;
+  --ng-text: #ff8ea2;
+  --warn-soft: #3a2c10;
+  --warn-text: #ffc757;
+  --kokugo: #e8555a;
+  --kokugo-soft: #3a1c26;
+  --kokugo-ink: #ff9a9e;
+  --math: #4a7dff;
+  --math-soft: #1a2a5c;
+  --math-ink: #93b4ff;
+  --science: #139c74;
+  --science-soft: #12352e;
+  --science-ink: #6fe0bd;
+  --social: #d47a12;
+  --social-soft: #3a2a14;
+  --social-ink: #ffc06b;
+  --english: #9a6cf7;
+  --english-soft: #2b1f52;
+  --english-ink: #c9adff;
+  --fig-fill: rgba(140, 140, 255, 0.16);
+  --fig-accent: #ff7a80;
+  --stage-1: #353a7a;
+  --stage-2: #4b50ad;
+  --stage-3: #6569da;
+  --stage-4: #8c8eff;
+  --stage-5: #c3c4ff;
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 14px rgba(0, 0, 0, 0.25);
+  --shadow-2: 0 10px 34px rgba(0, 0, 0, 0.4);
+  --shadow-3: 0 24px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* 教科ごとのローカル色 */
+[data-subject='kokugo'] { --sc: var(--kokugo); --sc2: var(--kokugo-2); --sc-soft: var(--kokugo-soft); --sc-ink: var(--kokugo-ink); }
+[data-subject='math'] { --sc: var(--math); --sc2: var(--math-2); --sc-soft: var(--math-soft); --sc-ink: var(--math-ink); }
+[data-subject='science'] { --sc: var(--science); --sc2: var(--science-2); --sc-soft: var(--science-soft); --sc-ink: var(--science-ink); }
+[data-subject='social'] { --sc: var(--social); --sc2: var(--social-2); --sc-soft: var(--social-soft); --sc-ink: var(--social-ink); }
+[data-subject='english'] { --sc: var(--english); --sc2: var(--english-2); --sc-soft: var(--english-soft); --sc-ink: var(--english-ink); }
+[data-subject='mix'] { --sc: var(--primary); --sc2: var(--primary-2); --sc-soft: var(--primary-soft); --sc-ink: var(--primary-text); }

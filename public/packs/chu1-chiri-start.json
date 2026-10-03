@@ -1,0 +1,32 @@
+{
+  "id": "chu1-chiri-start",
+  "name": "中1地理スタートパック",
+  "version": 1,
+  "author": "まなびクエスト",
+  "description": "中学1年の地理「世界と日本のすがた」の入門問題（サーバー配信パックのサンプル）",
+  "units": [
+    { "id": "h7-sekai", "subject": "social", "grade": 7, "name": "世界のすがた（中1）", "area": "地理" },
+    { "id": "h7-nihon", "subject": "social", "grade": 7, "name": "日本のすがた（中1）", "area": "地理" }
+  ],
+  "questions": [
+    { "unit": "h7-sekai", "type": "choice", "prompt": "六大陸のうち、いちばん面積が大きいのは？", "choices": ["ユーラシア大陸", "アフリカ大陸", "北アメリカ大陸", "南極大陸"], "explanation": "ユーラシア大陸は、ヨーロッパとアジアがのっている世界最大の大陸。", "difficulty": 1 },
+    { "unit": "h7-sekai", "type": "choice", "prompt": "三大洋のうち、いちばん広いのは？", "choices": ["太平洋", "大西洋", "インド洋", "北極海"], "explanation": "三大洋は太平洋・大西洋・インド洋。最も広いのは太平洋。", "difficulty": 1 },
+    { "unit": "h7-sekai", "type": "input", "prompt": "緯度0度の緯線を何という？", "answer": "赤道", "accept": ["せきどう"], "explanation": "赤道より北が北緯、南が南緯。", "difficulty": 1 },
+    { "unit": "h7-sekai", "type": "input", "prompt": "イギリスのロンドンを通る、経度0度の経線を何という？", "answer": "本初子午線", "accept": ["ほんしょしごせん"], "explanation": "本初子午線より東が東経、西が西経。", "difficulty": 2 },
+    { "unit": "h7-sekai", "type": "numeric", "prompt": "経度が何度ちがうと、時差が1時間になる？", "answer": "15", "unitSuffix": "度", "explanation": "地球は24時間で360度回るので、360÷24＝15度で1時間。", "difficulty": 2 },
+    { "unit": "h7-sekai", "type": "numeric", "prompt": "日本の標準時子午線は東経何度？", "answer": "135", "unitSuffix": "度", "explanation": "兵庫県明石市を通る東経135度の経線。", "difficulty": 2 },
+    { "unit": "h7-sekai", "type": "numeric", "prompt": "日本（東経135度）とロンドン（経度0度）の時差は何時間？", "answer": "9", "unitSuffix": "時間", "explanation": "135 ÷ 15 ＝ 9 時間。日本のほうが9時間進んでいる。", "difficulty": 3 },
+    { "unit": "h7-sekai", "type": "numeric", "numKind": "ratio", "prompt": "地球の表面の、陸地と海洋の面積の比（陸地：海洋）は、およそいくつ？", "answer": "3:7", "explanation": "地球の表面の約7割が海。だから「水の惑星」とよばれる。", "difficulty": 2 },
+    { "unit": "h7-sekai", "type": "choice", "prompt": "世界でいちばん面積が大きい国は？", "choices": ["ロシア", "カナダ", "アメリカ合衆国", "中国"], "explanation": "ロシアの面積は日本の約45倍。", "difficulty": 1 },
+    { "unit": "h7-sekai", "type": "choice", "prompt": "世界でいちばん面積が小さい国は？", "choices": ["バチカン市国", "モナコ", "ナウル", "ツバル"], "explanation": "バチカン市国はイタリアのローマ市内にある国。", "difficulty": 2 },
+    { "unit": "h7-sekai", "type": "choice", "prompt": "世界を6つの州に分けたとき、ふくまれないものは？", "choices": ["南極州", "アジア州", "オセアニア州", "ヨーロッパ州"], "explanation": "6つの州：アジア州・ヨーロッパ州・アフリカ州・北アメリカ州・南アメリカ州・オセアニア州。", "difficulty": 2 },
+    { "unit": "h7-sekai", "type": "choice", "prompt": "緯線や経線を利用した、直線的な国境が多い大陸は？", "choices": ["アフリカ大陸", "ユーラシア大陸", "南アメリカ大陸", "オーストラリア大陸"], "explanation": "ヨーロッパの国々が植民地支配をしていたころに、緯線・経線を使って境界線を引いたなごり。", "difficulty": 3 },
+    { "unit": "h7-sekai", "type": "choice", "prompt": "中心からの距離と方位が正しくあらわされる地図は？", "choices": ["正距方位図法", "メルカトル図法", "モルワイデ図法", "地球儀"], "explanation": "メルカトル図法は角度が正しく、航海図に使われる。", "difficulty": 3 },
+    { "unit": "h7-nihon", "type": "choice", "prompt": "日本の最北端の島は？", "choices": ["択捉島", "沖ノ鳥島", "南鳥島", "与那国島"], "explanation": "最北端：択捉島、最南端：沖ノ鳥島、最東端：南鳥島、最西端：与那国島。", "difficulty": 2 },
+    { "unit": "h7-nihon", "type": "choice", "prompt": "日本の最南端の島は？", "choices": ["沖ノ鳥島", "南鳥島", "与那国島", "択捉島"], "explanation": "沖ノ鳥島は護岸工事で島が波にけずられないよう守られている。", "difficulty": 2 },
+    { "unit": "h7-nihon", "type": "choice", "prompt": "日本の最東端の島は？", "choices": ["南鳥島", "沖ノ鳥島", "与那国島", "択捉島"], "explanation": "南鳥島は東京都に属している。", "difficulty": 2 },
+    { "unit": "h7-nihon", "type": "choice", "prompt": "日本の最西端の島は？", "choices": ["与那国島", "南鳥島", "沖ノ鳥島", "択捉島"], "explanation": "与那国島は沖縄県。台湾が見えることもある。", "difficulty": 2 },
+    { "unit": "h7-nihon", "type": "choice", "prompt": "排他的経済水域は、沿岸から何海里までの範囲？", "choices": ["200海里", "12海里", "100海里", "350海里"], "explanation": "12海里までは領海。200海里までの水産資源・鉱産資源は沿岸国のもの。", "difficulty": 3 },
+    { "unit": "h7-nihon", "type": "tf", "prompt": "日本の国土面積は約38万km²である。", "answer": "o", "explanation": "日本の面積は約38万km²。", "difficulty": 2 }
+  ]
+}
